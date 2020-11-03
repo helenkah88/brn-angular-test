@@ -1,0 +1,72 @@
+:host {
+  position: relative;
+}
+
+.carousel {
+  height: 264px;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.carousel__container {
+  height: 224px;
+  display: flex;
+}
+
+.carousel__card {
+  padding: 20px;
+  min-width: 30%;
+}
+
+.carousel__card + .carousel__card {
+  margin-left: 10px;
+}
+
+:host ::ng-deep .info-card {
+  padding: 0 !important;
+}
+
+.carousel__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px #e3e3e3;
+  color: #D0021B;
+  transition: .4s;
+}
+
+.carousel__arrows a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel__arrow-left {
+  left: 0;
+}
+
+.carousel__arrow-right {
+  right: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+  .carousel__card {
+    max-width: 220px;
+  }
+
+  .carousel__card {
+    min-width: 25%;
+  }
+}
+
+@media screen and (min-width: 1125px) {
+
+  .carousel__arrow-left {
+    left: -8%;
+  }
+
+  .carousel__arrow-right {
+    right: -8%;
+  }
+  
+}

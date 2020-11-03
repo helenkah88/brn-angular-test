@@ -1,0 +1,5 @@
+<div class="search" (click)="showForm()"><i class="material-icons material-icons-outlined md-light">search</i></div>
+<form action="" id="form" #form *ngIf="isShown">
+  <input class="input" type="text" #search>
+</form>
+<div class="close-btn" *ngIf="isShown" (click)="isShown = false;"><i class="material-icons material-icons-outlined md-light">close</i></div>

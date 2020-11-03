@@ -1,0 +1,66 @@
+:host {
+  position: relative;
+  border-radius: 24px;
+  background: #fff;
+}
+
+:host ::ng-deep .card-img {
+  border-radius: 14px;
+}
+
+:host .info-card {
+  padding: 40px;
+}
+
+:host.info-card--dark {
+  background: #0E1E31 !important;
+  color: white;
+}
+
+:host ::ng-deep .info-card__heading {
+  color: #D0021B;
+  font-family: 'SF Pro Display Medium';
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+:host ::ng-deep .info-card__heading--column {
+  float: left;
+}
+
+:host ::ng-deep .info-card__heading--sm {
+  font-size: 14px;
+}
+
+:host ::ng-deep .info-card__heading--md {
+  font-size: 24px;
+}
+
+:host ::ng-deep .info-card__heading--lg {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+:host ::ng-deep .info-card__heading--blue {
+  color: #50E3C2;
+}
+
+:host ::ng-deep .info-card__heading--italic {
+  font-weight: normal;
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+
+  :host .info-card {
+    padding: 60px;
+  }
+
+  :host ::ng-deep .info-card__heading--lg {
+    font-size: 48px;
+  }
+
+  :host ::ng-deep .info-card__heading--column {
+    width: 48%;
+  }
+}
